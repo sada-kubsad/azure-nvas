@@ -9,7 +9,7 @@ You can use the following commands in a Linux shell to deploy an Ubuntu-based NV
 ```bash
 # Variables
 rg=nva
-location=westeurope
+location=westus3
 vnet_name=nva
 vnet_prefix=192.168.0.0/16
 nva_subnet_name=nva
