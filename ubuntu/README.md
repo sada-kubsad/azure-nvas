@@ -29,7 +29,7 @@ function first_ip(){
 # Create RG and VNet
 echo "Creating RG and VNet..."
 az group create -n $rg -l $location -o none
-az network vnet create -n $vnet_name -g $rg --address-prefixes $vnet_prefix --subnet-name $nva_subnet_name --subnet-prefixes $nva_subnet_prefix -o none
+az network vnet create -n $vnet_name -g $rg --address-prefixes $vnet_prefix --subnet-name $nva_subnet_name --subnet-prefixes $nva_subnet_prefix --location $location -o none
 # NSG for NVA
 echo "Creating NSG ${nva_name}-nsg..."
 az network nsg create -n "${nva_name}-nsg" -g $rg -o none
